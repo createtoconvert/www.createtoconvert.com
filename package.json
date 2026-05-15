@@ -1,0 +1,21 @@
+{
+  "name": "www.createtoconvert.com",
+  "version": "1.0.0",
+  "description": "This repository powers the [createtoconvert.com](https://www.createtoconvert.com/) website.",
+  "main": "index.js",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/createtoconvert/www.createtoconvert.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "homepage": "https://www.createtoconvert.com",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^1.1.4",
+    "gulp-uglify": "^3.0.2"
+  }
+}

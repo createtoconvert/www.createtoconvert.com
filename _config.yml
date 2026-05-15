@@ -1,0 +1,16 @@
+title:        Create to Convert
+name:         Create to Convert
+description:  Create to Convert is a full-service web development company, specializing in developing high-functioning e-commerce websites in the online travel and ticketing industries.
+author:       Andrew G Johnson
+author_email: andrew@createtoconvert.com
+email:        andrew@createtoconvert.com
+url:          "https://www.createtoconvert.com"
+layouts_dir:  layouts
+exclude:
+  - .github/
+  - node_modules/
+  - layouts/
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - README.md
