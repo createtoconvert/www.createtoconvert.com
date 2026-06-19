@@ -1,86 +1,56 @@
 ---
-layout:      layout
-title:       Travel and Ticketing Solutions
-seo_title:   "Create to Convert &#9679; Travel and Ticketing Solutions &#9679; Websites Built to Convert"
+layout:      default
+title:       Create to Convert • Travel and Ticketing Solutions • Websites Built to Convert
 description: "Create to Convert is a full-service web development company, specializing in developing high-functioning e-commerce websites in the online travel and ticketing industries."
 permalink:   /
 ---
-
-<div id="subheader" class="homepage">
-    <div id="subheader-inner">
-        <h1>
-            <strong>Travel and Ticketing Solutions</strong><br />
-            Websites Built to Convert
-        </h1>
-        <p>Create to Convert is a full-service web development company, specializing in developing high-functioning e-commerce websites in the online travel and ticketing industries. Increasing conversions is the name of our game. No matter the industry, the end goal is always to increase sales, and this continues to be our primary focus when developing web solutions for your business.</p>
-        <p class="button">
-            <a href="/about/" title="More About Us" class="button">More About Us &#8594;</a>
-        </p>
-        <p id="subheader-img-container">
-            <img src="/images/homepage-screenshot.gif" alt="" />
-        </p>
+<header>
+    <div id="header" class="header-laptop-typing">
+        <p class="header-eyebrow">Software Engineering • Web Development • Technology</p>
+        <h1>Websites Built to Convert</h1>
+        <h2 class="purple">Travel and Ticketing Solutions</h2>
     </div>
-</div>
-<b id="subheader-spacer"></b>
-<div id="content">
-    <div id="homepage-container">
-        <div id="homepage-primary">
-            <h2>Create to Convert Products</h2>
-            <ul id="homepage-products">
-                <li id="homepage-products-moap">
-                    <h3><strong>Mint on a Pillow</strong> - Customizable Hotel Reservation Engine</h3>
-                    <p>The Mint on a Pillow Hotel Reservation Engine gives you the ability to sell Expedia's vast inventory of hotels directly through your website. With our variety of integration options you can offer your customers a customized hotel reservation path and earn big commissions while doing so.</p>
-                    <i class="icon icon-moap-logo"></i>
-                </li>
-                <li id="homepage-products-hf">
-                    <h3><strong>Hotels First</strong> - Discount Hotels Worldwide</h3>
-                    <p>HotelsFirst was launched to serve as a resource for not only finding, reviewing and reserving hotel rooms online but also to educate our customers about their destination. Hotels First includes hundreds of destination and theme-based travel guides to help our customers with every step of their travel planning.</p>
-                    <i class="icon icon-hf-logo"></i>
-                </li>
-                <li id="homepage-products-mtb">
-                    <h3><strong>My Ticket Booth</strong> - Online Ticketing Engine</h3>
-                    <p>My Ticket Booth is online ticketing software which allows any company sell event tickets directly through their website. Many comedy clubs, theatres, bars, nightclubs and more are already benefiting from the My Ticket Booth platform.</p>
-                    <i class="icon icon-mtb-logo"></i>
-                </li>
-            </ul>
-        </div>
-        <div id="homepage-secondary">
-            <h4>Some of our Top Partners</h4>
-            <ul id="homepage-top-partners">
-                <li>
-                    <strong>Expedia Affiliate Network</strong>
-                    <i class="icon icon-ean-logo"></i>
-                </li>
-                <li>
-                    <strong>Partner Fusion</strong>
-                    <i class="icon icon-partnerfusion-logo"></i>
-                </li>
-                <li>
-                    <strong>SocialSEO</strong>
-                    <i class="icon icon-socialseo-logo"></i>
-                </li>
-                <li>
-                    <strong>Priceline.com</strong>
-                    <i class="icon icon-priceline-logo"></i>
-                </li>
-                <li>
-                    <strong>Blue Man Group</strong>
-                    <i class="icon icon-bluemangroup-logo"></i>
-                </li>
-                <li>
-                    <strong>TripAdvisor</strong>
-                    <i class="icon icon-tripadvisor-logo"></i>
-                </li>
-            </ul>
-            <div id="homepage-free-proposal">
-                <p>
-                    <strong>Free Cost Proposal</strong><br />
-                    Interested in one of our products or services? Please contact us today for a free cost proposal.<br />
-                    <a href="/contact/" title="Contact Us Today">Contact Us Today!</a>
-                </p>
-                <i class="icon icon-proposal"></i>
-            </div>
-        </div>
-        <b id="homepage-spacer"></b>
+</header>
+<main>
+    <div id="about-details" class="layout layout-spaced">
+        <p class="header-eyebrow">Who we are</p>
+        <p><strong>Create to Convert</strong> is a full-service web development company based in <i class="fa-brands fa-canadian-maple-leaf"></i>Winnipeg, Manitoba, Canada managed by <a href="https://www.andrewgjohnson.com/" title="Andrew G Johnson"><em>Andrew G Johnson</em></a>. We specialize in developing high-functioning e-commerce websites in the online travel and ticketing industries.</p>
+        <p>
+            <a href="/about/" title="Learn More" class="button">Learn more &#8594;</a>
+        </p>
+        <ul>
+            <li>
+                <h3>Web Development</h3>
+                <p>We can build your website or software application.</p>
+                <i class="fa-solid fa-code"></i>
+            </li>
+            <li>
+                <h3>Server Management</h3>
+                <p>We can manage hosting and cloud infrastructure.</p>
+                <i class="fa-solid fa-cloud"></i>
+            </li>
+            <li>
+                <h3>Databases/Caching</h3>
+                <p>We can optimize your caching and data strategy.</p>
+                <i class="fa-solid fa-database"></i>
+            </li>
+            <li>
+                <h3>Travel and Ticketing</h3>
+                <p>Our focus has been on event ticketing and online travel.</p>
+                <i class="fa-solid fa-location-dot"></i>
+            </li>
+        </ul>
     </div>
-</div>
+    {% include global-clientele.html %}
+    <div class="layout layout-centered">
+        <p class="header-eyebrow">Services</p>
+        <h3>We can help <strong class="purple">your company</strong> with…</h3>
+        {% include services.html %}
+        <p>
+            <a href="/services/" title="All Services" class="button">All services &#8594;</a>
+        </p>
+        <br />
+    </div>
+    {% include testimonials.html %}
+    {% include process.html %}
+</main>

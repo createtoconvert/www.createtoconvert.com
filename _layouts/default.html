@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>{{ page.title | default: site.title }}</title>
+        <meta name="description" content="{{ page.description | default: site.description }}" />
+        {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
+        {% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+        {% if jekyll.environment == "production" %}
+            <link rel="stylesheet" href="/css/stylesheet.min.css?_={{ site.time | date: '%Y%m%d%H%M%S' }}" />
+        {% else %}
+            <link rel="stylesheet" href="/css/stylesheet.css" />
+        {% endif %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div id="content">
+            {{ content }}
+        </div>
+        <footer>
+            <div id="footer">
+                <div class="layout">
+                    <div class="footer-column">
+                        <p class="logo">
+                            <a href="/" title="Create to Convert">Create to Convert</a>
+                        </p>
+                        <p>
+                            <em>Based in Winnipeg, Manitoba, Canada 🍁</em>
+                            <br />
+                            We provide world-class service to a global clientele.
+                        </p>
+                        <p>
+                            <em>Contact:</em>
+                            <br />
+                            <a href="/contact/" title="Contact">hello@createtoconvert.com</a>
+                        </p>
+                        <ul id="footer-social">
+                            <li>
+                                <a href="/contact/" title="Email Create to Convert">
+                                    <span>Email Create to Convert</span>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/createtoconvert" title="Create to Convert on Facebook">
+                                    <span>Create to Convert on Facebook</span>
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/createtoconvert" title="Create to Convert on Twitter">
+                                    <span>Create to Convert on Twitter</span>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/create-to-convert/" title="Create to Convert on LinkedIn">
+                                    <span>Create to Convert on LinkedIn</span>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/createtoconvert" title="Create to Convert on 𝕏.com">
+                                    <span>Create to Convert on 𝕏.com</span>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Services</h6>
+                        <ul>
+                            <li>
+                                <a href="/services/web-development/" title="Web Development">Web Development</a>
+                            </li>
+                            <li>
+                                <a href="/services/artificial-intelligence/" title="Artificial Intelligence">Artificial Intelligence</a>
+                            </li>
+                            <li>
+                                <a href="/services/software-engineering/" title="Software Engineering">Software Engineering</a>
+                            </li>
+                            <li>
+                                <a href="/services/database-optimization/" title="Database Optimization">Database Optimization</a>
+                            </li>
+                            <li>
+                                <a href="/services/server-infrastructure/" title="Server Infrastructure">Server Infrastructure</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Industries</h6>
+                        <ul>
+                            <li>
+                                <a href="/services/travel-and-tourism/" title="Travel and Tourism">Travel and Tourism</a>
+                            </li>
+                            <li>
+                                <a href="/services/ticketing-and-events/" title="Ticketing and Events">Ticketing and Events</a>
+                            </li>
+                            <li>
+                                <a href="/services/cloud-computing/" title="Cloud Computing">Cloud Computing</a>
+                            </li>
+                            <li>
+                                <a href="/services/application-design/" title="Application Design">Application Design</a>
+                            </li>
+                            <li>
+                                <a href="/services/" title="More from Us">More from Us &#8594;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h6>Links</h6>
+                        <ul>
+                            <li>
+                                <a href="/about/" title="About">About</a>
+                            </li>
+                            <li>
+                                <a href="/jobs/" title="Jobs">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio/" title="Portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="/contact/" title="Contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/contact/" title="Free Project Proposal">Free Project Proposal &#8594;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="copyright">Create to Convert, Inc. &copy; 2010–{{ site.time | date: "%Y" }}</p>
+                </div>
+            </div>
+        </footer>
+        <div id="top">
+            <div class="layout">
+                <p class="logo">
+                    <a href="/" title="Create to Convert">Create to Convert</a>
+                </p>
+                <nav>
+                    <ul id="nav">
+                        <li{% if page.url == '/' %} class="active"{% endif %}>
+                            <a href="/" title="Home">Home</a>
+                        </li>
+                        <li{% if page.url contains '/about' %} class="active"{% endif %}>
+                            <a href="/about/" title="About">About</a>
+                        </li>
+                        <li{% if page.url contains '/services' %} class="active"{% endif %}>
+                            <a href="/services/" title="Services">Services</a>
+                        </li>
+                        <li{% if page.url contains '/portfolio' %} class="active"{% endif %}>
+                            <a href="/portfolio/" title="Portfolio">Portfolio</a>
+                        </li>
+                        <li{% if page.url contains '/contact' %} class="active"{% endif %}>
+                            <a href="/contact/" title="Contact">Contact</a>
+                        </li>
+                        <li id="nav-cta">
+                            <a href="/contact/" title="Free Project Proposal">Free Project Proposal &#8594;</a>
+                        </li>
+                    </ul>
+                    <a href="/menu/" title="Menu" id="menu-toggle">Menu<i id="menu-toggle-1"></i><i id="menu-toggle-2"></i><i id="menu-toggle-3"></i></a>
+                </nav>
+            </div>
+        </div>
+        {% if jekyll.environment == "production" %}
+            <script type="text/javascript" src="/javascript/javascript.min.js?_={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+        {% else %}
+            <script type="text/javascript" src="/javascript/javascript.js"></script>
+        {% endif %}
+    </body>
+</html>

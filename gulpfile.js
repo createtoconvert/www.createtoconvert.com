@@ -13,7 +13,7 @@ function minifyCss() {
 }
 
 function minifyJavascript() {
-  return gulp.src(['javascript/plugins.js', 'javascript/javascript.js'])
+  return gulp.src(['javascript/javascript.js'])
     .pipe(concat('javascript.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('javascript'));
