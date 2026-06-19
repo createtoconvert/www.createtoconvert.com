@@ -5,11 +5,9 @@ author:       Andrew G Johnson
 author_email: andrew@createtoconvert.com
 email:        andrew@createtoconvert.com
 url:          "https://www.createtoconvert.com"
-layouts_dir:  layouts
 exclude:
   - .github/
   - node_modules/
-  - layouts/
   - gulpfile.js
   - package.json
   - package-lock.json

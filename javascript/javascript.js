@@ -1,26 +1,17 @@
-if (/Android|BlackBerry|IEMobile|iPad|iPhone|iPod/i.test(navigator.userAgent))
-{
-	window.scrollTo(0,1);
-	window.scrollTo(0,0);
-	if (window.addEventListener)
-	{
-		window.addEventListener("load",function() {
-			setTimeout(function() {
-				window.scrollTo(0,1);
-				window.scrollTo(0,0);
-			},0);
-		});
-	}
-}
-
-jQuery(function($) {
-	var html_element = $("html");
-	var navigation_toggle_element = $("#navigation-toggle");
-	if (navigation_toggle_element.length > 0)
-	{
-		navigation_toggle_element.click(function() {
-			html_element.toggleClass("show-menu");
-			return false;
-		});
-	}
-});
+(function() {
+    // Handle menu toggle clicks
+    var menuToggleElement = document.getElementById('menu-toggle');
+    if (menuToggleElement !== null) {
+        menuToggleElement.addEventListener('click', function(e) {
+            if (document.body.className.indexOf('menu-open') >= 0) {
+                document.body.className = document.body.className.replace(/\s*menu-open\s*/g, ' ').trim();
+                menuToggleElement.setAttribute('aria-expanded', 'false');
+            } else {
+                document.body.className = (document.body.className + ' menu-open').trim();
+                menuToggleElement.setAttribute('aria-expanded', 'true');
+            }
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    }
+})();

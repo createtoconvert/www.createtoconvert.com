@@ -1,17 +1,37 @@
 ---
-layout:      layout
-title:       Contact Us
-description: "Get in touch with the Create to Convert team. Email us at contact@createtoconvert.com."
+layout:      default
+title:       Contact • Create to Convert
+description: "Contact Create to Convert to discuss your project. We offer free proposals for new clients. Reach us at hello@createtoconvert.com or use our contact form."
 permalink:   /contact/
 ---
-
-<div id="subheader">
-    <div id="subheader-inner">
+<header>
+    <div id="header">
         <h1>Contact Us</h1>
     </div>
-</div>
-<b id="subheader-spacer"></b>
-<div id="content">
-    <h2>Email Create to Convert</h2>
-    <p>You can get in touch with our team by emailing <a href="mailto:contact@createtoconvert.com" title="contact@createtoconvert.com">contact@createtoconvert.com</a>.</p>
-</div>
+</header>
+<main>
+    <div class="layout layout-spaced layout-centered">
+        <p class="header-eyebrow">Get in touch</p>
+        <h2>How can we help <strong class="purple">your company</strong>?</h2>
+        <p>We provide <strong>free project proposals</strong> for new clients.</p>
+        <p>Send an email to <a href="mailto:hello@createtoconvert.com">hello@createtoconvert.com</a> or fill out the form below.</p>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <p>
+                <label for="contact-name">Your Name:</label>
+                <input type="text" name="name" required="required" id="contact-name" placeholder="John Doe" />
+            </p>
+            <p>
+                <label for="contact-email">Your Email:</label>
+                <input type="email" name="email" required="required" id="contact-email" placeholder="john.doe@example.com" />
+            </p>
+            <p>
+                <label for="contact-message">Your Message:</label>
+                <textarea name="message" required="required" id="contact-message" placeholder="Your message…"></textarea>
+            </p>
+            <p>
+                <input type="hidden" name="access_key" value="94eafb66-6c67-420e-b805-8ab6e8d7af74">
+                <input type="submit" value="Send &#8594;" class="button" />
+            </p>
+        </form>
+    </div>
+</main>
