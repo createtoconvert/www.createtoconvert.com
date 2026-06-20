@@ -90,6 +90,20 @@ ul.portfolio b                                      { background-color:rgba(0,0,
 p.portfolio-logo                                    { text-align:center }
 p.portfolio-logo img                                { border-radius:20px;margin:0 auto;max-width:100%;-moz-border-radius:20px }
 
+p.macbook-screenshot                                { border:0 solid #ffffff;border-width:20px 0 30px;height:504px;margin:0 auto;position:relative;width:868px }
+p.macbook-screenshot img.macbook                    { bottom:0;display:block;height:504px;left:0;margin:0 auto;position:absolute;right:0;width:868px;z-index:2 }
+p.macbook-screenshot img.screenshot                 { display:block;height:414px;left:102px;margin:0 auto;position:absolute;right:102px;top:44px;width:664px;z-index:3 }
+@media only screen and (max-width:899px) {
+    p.macbook-screenshot                            { height:252px;width:434px }
+    p.macbook-screenshot img.macbook                { height:252px;width:434px }
+    p.macbook-screenshot img.screenshot             { height:207px;left:51px;right:51px;top:22px;width:332px }
+}
+@media only screen and (max-width:459px) {
+    p.macbook-screenshot                            { height:207px;width:332px }
+    p.macbook-screenshot img.macbook                { display:none }
+    p.macbook-screenshot img.screenshot             { left:0;right:0;top:10px;width:332px }
+}
+
 #content                                            { background-color:#ffffff;padding:100px 0 0 }
 
 #header                                             { background-color:#0c0227;color:#ffffff;padding:20px 0 40px;position:relative }
@@ -118,10 +132,13 @@ div.header-laptop-typing::before                    { background-image:url("/ima
 
 #service                                            { max-width:700px;padding-right:600px;position:relative }
 #service::before                                    { background-color:#f6f6ff;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;border-radius:20px;bottom:40px;content:"";display:block;position:absolute;right:10px;top:40px;width:500px }
+div.service-api-integrations::before                { background-image:url("/images/services/api-integrations.jpg") }
 div.service-application-design::before              { background-image:url("/images/services/application-design.jpg") }
 div.service-artificial-intelligence::before         { background-image:url("/images/services/artificial-intelligence.jpg") }
 div.service-cloud-computing::before                 { background-image:url("/images/services/cloud-computing.jpg") }
 div.service-database-optimization::before           { background-image:url("/images/services/database-optimization.jpg") }
+div.service-payments-and-cryptocurrency::before     { background-image:url("/images/services/payments-and-cryptocurrency.jpg") }
+div.service-sdlc-and-product-management::before     { background-image:url("/images/services/sdlc-and-product-management.jpg") }
 div.service-server-infrastructure::before           { background-image:url("/images/services/server-infrastructure.jpg") }
 div.service-software-engineering::before            { background-image:url("/images/services/software-engineering.jpg") }
 div.service-ticketing-and-events::before            { background-image:url("/images/services/ticketing-and-events.jpg") }
