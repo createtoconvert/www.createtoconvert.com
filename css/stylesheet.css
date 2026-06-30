@@ -209,13 +209,6 @@ div.footer-column:first-child                       { width:35.5% }
     ul.our-process li:nth-child(2)::before,ul.our-process li:nth-child(2)::after { bottom:100%;color:#824deb;content:"\e098";font-family:"Font Awesome 7 Free";font-weight:900;font-size:50px;font-style:normal;height:50px;left:0;line-height:50px;margin-bottom:10px;position:absolute;right:0;-webkit-font-smoothing:antialiased }
     ul.our-process li:nth-child(2)::after { margin-bottom:0;margin-top:10px;top:100% }
 
-/*
-ul.our-process                                      { display:flex;justify-content:center;margin:10px 0 0;padding:0;position:relative }
-ul.our-process::before,ul.our-process::after        { color:#824deb;content:"\e098";font-family:"Font Awesome 7 Free";font-weight:900;font-size:67px;font-style:normal;left:175px;position:absolute;right:50%;top:35%;-webkit-font-smoothing:antialiased }
-ul.our-process::after                               { left:50%;right:175px }
-ul.our-process li                                   { background-color:#f6f6ff;border-radius:10px;flex:1 1 300px;list-style-type:none;margin:10px 10px 10px 135px;padding:25px 20px 30px;text-align:left }
-*/
-
     ul.services i                                   { bottom:90px }
 
     #page-not-found                                 { max-width:1300px;padding:20px 0 600px }
