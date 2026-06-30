@@ -12,7 +12,7 @@ function minifyCss() {
     .pipe(gulp.dest('css'));
 }
 
-function minifyJavascript() {
+function minifyJavaScript() {
   return gulp.src(['javascript/javascript.js'])
     .pipe(concat('javascript.min.js'))
     .pipe(uglify())
@@ -21,5 +21,5 @@ function minifyJavascript() {
 
 gulp.task('default', gulp.series(
   minifyCss,
-  minifyJavascript
+  minifyJavaScript
 ));
